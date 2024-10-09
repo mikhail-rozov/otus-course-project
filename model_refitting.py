@@ -24,7 +24,7 @@ RANDOM_STATE = 29
 def git_commit():
     subprocess.run(["git", "-C", PROJECT_DIR, "add", "model.pkl"], check=True)
     subprocess.run(["git", "-C", PROJECT_DIR, "commit", "-m", "new model version"], check=True)
-    subprocess.run(["git", "-C", PROJECT_DIR, "push", f"https://{os.getenv("GITHUB_TOKEN")}@github.com/mikhail-rozov/otus-course-project.git"], check=True)
+    subprocess.run(["git", "-C", PROJECT_DIR, "push", f"https://{os.getenv('GITHUB_TOKEN')}@github.com/mikhail-rozov/otus-course-project.git"], check=True)
 
 
 def main():
